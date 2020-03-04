@@ -2,7 +2,28 @@
  * YOUR CODE HERE *
  ******************/
 
+function call (someFunction){
 
+  someFunction()
+}
+
+function callTwice(anotherFunction){
+
+  anotherFunction()
+  anotherFunction()
+  
+}
+
+function callXTimes(anotherAnotherFunction,num1){
+
+  for(let count =0;count<num1;count++)
+
+  while(count<num1){
+
+   anotherAnotherFunction() 
+  }
+
+}
 
 
 /********************************
