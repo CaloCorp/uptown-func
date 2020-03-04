@@ -2,31 +2,68 @@
  * YOUR CODE HERE *
  ******************/
 
-function call (someFunction){
+const call=function (someFunction){
 
   someFunction()
 }
 
-function callTwice(anotherFunction){
+const callTwice =function(anotherFunction){
 
   anotherFunction()
   anotherFunction()
   
 }
 
-function callXTimes(anotherAnotherFunction,num1){
+const callXTimes=function(anotherAnotherFunction,num1){
 
-  for(let count =0;count<num1;count++)
+  for(let count =0;count<num1;count++){
 
-  while(count<num1){
 
-   anotherAnotherFunction() 
+
+anotherAnotherFunction() 
   }
 
 }
 
+const returnFromFunc = function(func){
 
-/********************************
+  return func();
+}
+
+const modifyString = function (str,func){
+
+  return func(str)
+}
+
+const modifyNumber = function (num,func){
+
+  return func(num)
+}
+const modifyAnything = function(value, func){
+
+  return func(value)
+}
+
+const twoFuncs= function(func1, func2){
+
+  return func2(func1());
+}
+
+const threeFuncs=function(func1, func2,func3){
+
+ return func3(func2(func1()))
+}
+
+const twoValues = function(val1,val2,func){
+
+  return func(val1,val2)
+}
+
+const twoValuesRTL= function(val1,val2,func){
+
+return func(val2,val1)
+}
+/******************************
  * OUR CODE HERE - DON'T TOUCH! *
  ********************************/
 
